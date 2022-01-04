@@ -78,7 +78,14 @@ async function merge_posts(list_of_posts) {
   list_of_posts.forEach((list) => {
     list.sort(compareCreatedAtAscending);
 
-    list.forEach((item) => {
+    list.forEach((_item) => {
+      let item = {
+        id: _item.id,
+        description: _item.description,
+        image: _item.image,
+        created_at: _item.created_at,
+      };
+
       if (duplicates[item.created_at]) {
         if (!duplicates[item.created_at].includes(item)) {
           const last_element =
