@@ -2,8 +2,8 @@
  * TO RUN THIS FILE
  * npm i
  * npm i -g knex
- * knex migrate:latest
- * knex seed:run
+ * knex migrate:latest [./db/migrations]
+ * knex seed:run [./db/seeds]
  * node app
  */
 
