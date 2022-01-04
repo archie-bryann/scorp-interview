@@ -50,17 +50,6 @@ async function get_posts(user_id, post_ids) {
 
 // Q2.
 async function merge_posts(list_of_posts) {
-  function compareCreatedAtDescending(a, b) {
-    // descending
-    if (Number(a) < Number(b)) {
-      return -1;
-    }
-    if (Number(a) > Number(b)) {
-      return 1;
-    }
-    return 0;
-  }
-
   function compareCreatedAtAscending(a, b) {
     // ascending
     if (a.created_at < b.created_at) {
