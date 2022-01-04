@@ -2,6 +2,7 @@
  * TO RUN THIS FILE
  * npm i
  * npm i -g knex
+ * create database `scorp`
  * knex migrate:latest [./db/migrations]
  * knex seed:run [./db/seeds]
  * node app
